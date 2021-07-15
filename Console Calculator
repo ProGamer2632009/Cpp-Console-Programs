@@ -1,0 +1,42 @@
+#include <iostream>
+
+using namespace std;
+
+int main(){
+  int num1; // A integer type variable("num1" is name and "int" is variable type)
+  
+  int num2; // A integer type Variable("num2" is name and "int" is variable type)
+  
+           //Variables above are Integer Variables and have no Data stored because the User will enter the Values for those Variables
+
+  char op; //char is a variable type which allows us to store a single character like 'A' or '+' Its also empty because the User will enter the Chracter
+          //Its also empty because the User will enter the Chracter
+          
+          cout << "Enter First Number: "; //Prints out the texts "Enter First Number: ".
+          
+          cin >> num1; //This will allow user to put the numbers inside the variable.
+          
+          cout << "Enter Second Number: "; //This Prints out the text.
+          
+          cin >> num2; //This will allow the user to enter the numbers inside the second int variable
+          
+          cout << "Enter Operator: "; //Prints out the text.
+          
+          cin >> op; // this allows to enter the math operator.
+                    //The Math Operators are Addition: '+' , Substraction: '-' , Multiplication: '*' , Division: '/'
+                    //There are lot other Math operators out their. For now those 4 will be used.
+          
+          if(op == '+'){
+             cout << num1 + num2; //This means that if the variable 'op' is '+' then it will execute the codes inside the Curly Brackets it continues in the rest of the code.
+          } else if(op == '-'){
+            cout << num1 - num2;
+          } else if(op == '*'){
+            cout << num1 * num2;                             
+          } else if(op == '/'){
+            cout << num1 / num2;
+          } else{
+              cout << "Invalid";        
+           } //The code inside the Curly bracket will be executed if user enters something Invalid
+
+          return 0;
+}
